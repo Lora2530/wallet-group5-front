@@ -1,0 +1,166 @@
+.registr {
+    top: 0px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+}
+.registr_bore {
+    position: absolute;
+    top: 52px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.App {
+    position: absolute;
+    width: 187px;
+    height: 45px;
+    left: 200px;
+    top: 597.5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.portmone {
+    position: absolute;
+    width: 40px;
+    height: 31px;
+    left: 834px;
+    top: 103px;
+
+}
+.Phone {
+    position: absolute;
+    left: 5.35%;
+    right: 4.07%;
+    top: 0.0%;
+    bottom: 0%;
+}
+
+
+.Wete {
+    position: absolute;
+    width: 121px;
+    height: 40px;
+    left: 894px;
+    top: 92px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.Em {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 775px;
+    top: 182px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+.Powor {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 775px;
+    top: 256px;
+
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.Powor_next {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 775px;
+    top: 330px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.Yo_neme {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 775px;
+    top: 404px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #BDBDBD;
+
+}
+
+.button_link {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 775px;
+    top: 488px;
+    background: #24CCA7;
+    border-radius: 20px;
+}
+
+.button_hit {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 775px;
+    top: 558px;
+    background: #FFFFFF;
+    border: 1px solid #4A56E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #4A56E2;
+}
+
+.button_hiting {
+    position: absolute;
+    width: 164px;
+    height: 24px;
+    left: 846px;
+    top: 571px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black;
+}
