@@ -1,51 +1,79 @@
-import React, {useState} from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-const LoginForm = (props) => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+import FormAuth from '../FormAuth/FormAuth';
 
-    const handleChange = e => {
-        const {name, value} = e.target;
-        switch(name) {
-            case 'email':
-                setEmail(value);
-                break;
-            case 'password':
-                setPassword(value);
-                break;
-            default:
-                console.log('error');
-        };
-    };
+import s from './loginForm.module.css';
 
-    const handleSubmit = () => {
-        const {onLoginSubmit} = props;
+const LoginForm = props => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-        onLoginSubmit({email, password});
-    };
+  const handleChange = e => {
+    const { name, value } = e.target;
+    switch (name) {
+      case 'email':
+        setEmail(value);
+        break;
+      case 'password':
+        setPassword(value);
+        break;
+      default:
+        console.log('error');
+    }
+  };
 
-    return (
-        <div>
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                handleSubmit()
-            }}>
-                <label htmlFor="" name="register" >
-                    <input type="text" placeholder="E-mail" name="email" onChange={e => {
-                        handleChange(e);
-                    }}/>
-                </label>
-                <label>
-                    <input  type="text" placeholder="Пароль" name="password" onChange={e => {
-                        handleChange(e);
-                    }}/>
-                </label>
-                <button type="submit">Вход</button>
-                <NavLink to='/register'>Регистрация</NavLink>
-            </form>
-        </div>
-    );
+  const handleSubmit = () => {
+    const { onLoginSubmit } = props;
+
+    onLoginSubmit({ email, password });
+  };
+
+  return (
+    <div className={s.container}>
+      <form
+        className={s.form}
+        onSubmit={e => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+      >
+        <FormAuth />
+        <label htmlFor="" name="register">
+          <input
+            className={s.input__email}
+            type="text"
+            placeholder="E-mail"
+            name="email"
+            onChange={e => {
+              handleChange(e);
+            }}
+          />
+        </label>
+        <label>
+          <input
+            className={s.input__password}
+            type="text"
+            placeholder="Пароль"
+            name="password"
+            onChange={e => {
+              handleChange(e);
+            }}
+          />
+        </label>
+        <button className={s.button__submit}  activeClassName={s.active} type="submit">
+          Вход
+        </button>
+        <NavLink 
+        className={s.button__registration} 
+        to="/register"
+        activeClassName={s.active}
+        >
+          Регистрация
+        </NavLink>
+      </form>
+    </div>
+  );
 };
 
 export default LoginForm;

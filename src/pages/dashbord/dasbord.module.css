@@ -1,0 +1,26 @@
+.tabl_heder {
+    position: absolute;
+    width: 700px;
+    height: 58px;
+    left: 495px;
+    top: 126px;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+
+}
+
+.tabl_1 {
+    width: 659px;
+    height: 27px;
+    left: 515px;
+    top: 142px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+

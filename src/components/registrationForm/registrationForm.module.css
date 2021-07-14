@@ -1,166 +1,80 @@
-.registr {
-    top: 0px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(50px);
+.form {
+  display: flex;
+  flex-direction: column;
 }
-.registr_bore {
-    position: absolute;
-    top: 52px;
-    background: #FFFFFF;
-    border-radius: 20px;
+.input {
+  width: 100%;
+  border: none;
+
+  padding-bottom: 10px;
 }
-
-.App {
-    position: absolute;
-    width: 187px;
-    height: 45px;
-    left: 200px;
-    top: 597.5px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 45px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
+.label {
+  line-height: 27px;
+  margin-bottom: 40px;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 10px;
 }
-
-.portmone {
-    position: absolute;
-    width: 40px;
-    height: 31px;
-    left: 834px;
-    top: 103px;
-
+.input_email {
+  background-image: url(./Email.svg);
+  width: 21px;
+  height: 16px;
+  margin-right: 10px;
 }
-.Phone {
-    position: absolute;
-    left: 5.35%;
-    right: 4.07%;
-    top: 0.0%;
-    bottom: 0%;
+.input_password {
+  background-image: url(./Password.svg);
+  width: 16px;
+  height: 21px;
+  margin-right: 14px;
 }
-
-
-.Wete {
-    position: absolute;
-    width: 121px;
-    height: 40px;
-    left: 894px;
-    top: 92px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 45px;
-    display: flex;
-    align-items: center;
-    color: #000000;
+.input_name {
+  background-image: url(./Name.svg);
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
 }
+.button_registr {
+  width: 300px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background: #24cca7;
+  border-radius: 20px;
+  border-color: #24cca7;
 
-.Em {
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 775px;
-    top: 182px;
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #BDBDBD;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
-.Powor {
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 775px;
-    top: 256px;
+.button_entrance {
+  width: 300px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #BDBDBD;
+  background: #ffffff;
+  border: 1px solid #4a56e2;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
+.button_entrance > a {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
 
-.Powor_next {
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 775px;
-    top: 330px;
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #BDBDBD;
-}
-
-.Yo_neme {
-    position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 775px;
-    top: 404px;
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #BDBDBD;
-
-}
-
-.button_link {
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    left: 775px;
-    top: 488px;
-    background: #24CCA7;
-    border-radius: 20px;
-}
-
-.button_hit {
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    left: 775px;
-    top: 558px;
-    background: #FFFFFF;
-    border: 1px solid #4A56E2;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #4A56E2;
-}
-
-.button_hiting {
-    position: absolute;
-    width: 164px;
-    height: 24px;
-    left: 846px;
-    top: 571px;
-    font-family: Circe;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: black;
+  color: #4a56e2;
 }
